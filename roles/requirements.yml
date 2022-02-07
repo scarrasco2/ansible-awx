@@ -1,0 +1,9 @@
+---
+roles:
+  - name: darkwizard242.crictl
+  - name: darkwizard242.containerd
+  - name: darkwizard242.helm
+  - name: darkwizard242.kubeadm
+  - name: darkwizard242.kubectl
+  - name: darkwizard242.kubelet
+  - name: darkwizard242.kubens

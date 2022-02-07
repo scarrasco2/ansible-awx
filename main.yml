@@ -1,0 +1,19 @@
+---
+- name: Configure k8s dependencies
+  hosts: all
+  become: yes
+
+  roles:
+    - darkwizard242.containerd
+    - darkwizard242.crictl
+    - darkwizard242.helm
+    - darkwizard242.kubeadm
+    - darkwizard242.kubectl
+    - darkwizard242.kubelet
+    - darkwizard242.kubens
+
+  tasks:
+    - name: Install IPVS
+      package:
+        name: ipvsadm
+        state: present
