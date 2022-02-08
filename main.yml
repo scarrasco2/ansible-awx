@@ -2,7 +2,15 @@
 - name: Configure k8s dependencies
   hosts: all
   become: yes
-
+  vars:
+    containerd_version: 1.5.9
+    crictl_version: 1.22.0
+    helm_version: 3.8.0
+    kubeadm_version: 1.22.0
+    kubectl_version: 1.22.6
+    kubelet_version: 1.22.6
+    kubens_version: 0.9.4
+    
   roles:
     - darkwizard242.containerd
     - darkwizard242.crictl
